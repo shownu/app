@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">The XXX</string>
+    <string name="action_settings">v1.3 XX @ XXX 2020</string>
+
+    <string name="ts"> </string>
+    <string name="comment"><i>Add comments about this area…</i></string>
+    <string name="logo">Logo</string>
+
+    <string name="emails">XXX@XXX.com; XXX@XXX.com</string>
+    <string name="emailHint">Recipient emails separated by ;</string>
+    <string name="checker_name">Checked by:</string>
+    <string name="checker">XXX</string>
+    <string name="checkerHint">Name…</string>
+    <string name="greeting">Hi XXX and XXX,</string>
+    <string name="intro">Please find below today\'s closing checklist.</string>
+
+    <dimen name="comment_width">364dp</dimen>
+    <dimen name="cb_height">36dp</dimen>
+    <dimen name="title_to_sub">4dp</dimen>
+    <dimen name="sub_to_cb">2dp</dimen>
+    <dimen name="cb_to_cb">2dp</dimen>
+    <dimen name="cb_to_sub">6dp</dimen>
+    <dimen name="cb_to_comments">4dp</dimen>
+    <dimen name="comments_to_title">8dp</dimen>
+    <dimen name="title_to_cb">4dp</dimen>
+    <dimen name="comments_to_end">24dp</dimen>
+
+    <string name="sf_title">SECOND FLOOR</string>
+
+    <string name="sf_subtitle1">EXEC CORRIDOR</string>
+    <string name="sfsub1_1">Check for people</string>
+    <string name="sfsub1_2">Blinds down?</string>
+    <string name="sfsub1_3">Windows closed?</string>
+
+    <string name="sf_subtitle2">KITCHEN AREA</string>
+    <string name="sfsub2_1">Check for people</string>
+    <string name="sfsub2_2">Appliances off?</string>
+    <string name="sfsub2_3">Lights off, door closed</string>
+
+    <string name="sf_subtitle3">GENTS TOILET</string>
+    <string name="sfsub3_1">Check for people</string>
+    <string name="sfsub3_2">Heater off?</string>
+    <string name="sfsub3_3">Lights off, door closed</string>
+
+    <string name="sf_subtitle4">LADIES TOILET</string>
+    <string name="sfsub4_1">Check for people</string>
+    <string name="sfsub4_2">Heater off?</string>
+    <string name="sfsub4_3">Lights off, door closed</string>
+
+    <string name="sf_subtitle5">DISABLED TOILET</string>
+    <string name="sfsub5_1">Check for people</string>
+    <string name="sfsub5_2">Lights off, door closed</string>
+
+    <string name="sf_subtitle6">PRESENTATION ROOM</string>
+    <string name="sfsub6_1">Check for people</string>
+    <string name="sfsub6_2">Projectors off?</string>
+    <string name="sfsub6_3">Front VTC camera unplugged?</string>
+    <string name="sfsub6_4">Rear VTC camera unplugged?</string>
+    <string name="sfsub6_5">Lights off, door closed</string>
+
+    <string name="sf_subtitle7">CONTROL ROOM</string>
+    <string name="sfsub7_1">Check for people</string>
+    <string name="sfsub7_2">Lights off, door closed</string>
+
+    <string name="sf_subtitle8">EXEC ROOM</string>
+    <string name="sfsub8_1">Check for people</string>
+    <string name="sfsub8_2">Projectors off?</string>
+    <string name="sfsub8_3">Front VTC camera unplugged?</string>
+    <string name="sfsub8_4">Lights off, door closed</string>
+
+    <string name="ff_title">FIRST FLOOR</string>
+
+    <string name="ff_subtitle1">GENTS TOILET</string>
+    <string name="ffsub1_1">Check for people</string>
+    <string name="ffsub1_2">Heater off?</string>
+    <string name="ffsub1_3">Lights off, door closed</string>
+
+    <string name="ff_subtitle2">LADIES TOILET</string>
+    <string name="ffsub2_1">Check for people</string>
+    <string name="ffsub2_2">Heater off?</string>
+    <string name="ffsub2_3">Lights off, door closed</string>
+
+    <string name="ff_subtitle3">KITCHEN</string>
+    <string name="ffsub3_1">Check for people</string>
+    <string name="ffsub3_2">Blinds down?</string>
+    <string name="ffsub3_3">Windows closed?</string>
+    <string name="ffsub3_4">Appliances off?</string>
+    <string name="ffsub3_5">Lights off, door closed</string>
+
+    <string name="ff_subtitle4">LAB 1</string>
+    <string name="ffsub4_1">Check for people</string>
+    <string name="ffsub4_2">Blinds down?</string>
+    <string name="ffsub4_3">Windows closed?</string>
+    <string name="ffsub4_4">Lights off, door closed</string>
+
+    <string name="ff_subtitle5">LAB 2</string>
+    <string name="ffsub5_1">Check for people</string>
+    <string name="ffsub5_2">Blinds down?</string>
+    <string name="ffsub5_3">Windows closed?</string>
+    <string name="ffsub5_4">Lights off, door closed</string>
+
+    <string name="ff_subtitle6">LAB 3</string>
+    <string name="ffsub6_1">Check for people</string>
+    <string name="ffsub6_2">Blinds down?</string>
+    <string name="ffsub6_3">Windows closed?</string>
+    <string name="ffsub6_4">Heater off?</string>
+    <string name="ffsub6_5">Lights off, door closed</string>
+
+    <string name="ff_subtitle7">COPIER ROOM</string>
+    <string name="ffsub7_1">Check for people</string>
+    <string name="ffsub7_2">Blinds down?</string>
+    <string name="ffsub7_3">Windows closed?</string>
+    <string name="ffsub7_4">Printer on standby?</string>
+    <string name="ffsub7_5">Lights off, door closed</string>
+
+    <string name="ff_subtitle8">OPEN OFFICE AREA</string>
+    <string name="ffsub8_1">Check for people</string>
+    <string name="ffsub8_2">Back stairs door closed?</string>
+    <string name="ffsub8_3">All 3 cabinets locked?</string>
+    <string name="ffsub8_4">Windows closed?</string>
+    <string name="ffsub8_5">Blinds down?</string>
+    <string name="ffsub8_6">Door closed</string>
+
+    <string name="gf_title">GROUND FLOOR</string>
+
+    <string name="gf_subtitle1">GENTS TOILET</string>
+    <string name="gfsub1_1">Check for people</string>
+    <string name="gfsub1_2">Heater off?</string>
+    <string name="gfsub1_3">Lights off, door closed</string>
+
+    <string name="gf_subtitle2">LADIES TOILET</string>
+    <string name="gfsub2_1">Check for people</string>
+    <string name="gfsub2_2">Heater off?</string>
+    <string name="gfsub2_3">Lights off, door closed</string>
+
+    <string name="gf_subtitle3">DISABLED TOILET</string>
+    <string name="gfsub3_1">Check for people</string>
+    <string name="gfsub3_2">Lights off, door closed</string>
+
+    <string name="gf_subtitle4">SMALL MEETING ROOM</string>
+    <string name="gfsub4_1">Check for people</string>
+    <string name="gfsub4_2">Blinds down?</string>
+    <string name="gfsub4_3">Windows closed?</string>
+    <string name="gfsub4_4">Heater off?</string>
+    <string name="gfsub4_5">Lights off, door closed</string>
+
+    <string name="gf_subtitle5">MAIN OFFICE</string>
+    <string name="gfsub5_1">Check for people</string>
+    <string name="gfsub5_2">Blinds down?</string>
+    <string name="gfsub5_3">Windows closed?</string>
+    <string name="gfsub5_4">Door closed</string>
+
+    <string name="gf_subtitle6">KITCHEN AREA</string>
+    <string name="gfsub6_1">Check for people</string>
+    <string name="gfsub6_2">Appliances off?</string>
+
+    <string name="gf_subtitle7">OFFICE 1</string>
+    <string name="gfsub7_1">Check for people</string>
+    <string name="gfsub7_2">Blinds down?</string>
+    <string name="gfsub7_3">Windows closed?</string>
+    <string name="gfsub7_4">Lights off, door closed</string>
+
+    <string name="gf_subtitle8">OFFICE 2</string>
+    <string name="gfsub8_1">Check for people</string>
+    <string name="gfsub8_2">Blinds down?</string>
+    <string name="gfsub8_3">Windows closed?</string>
+    <string name="gfsub8_4">Lights off, door closed</string>
+
+    <string name="gf_subtitle9">LAB 4</string>
+    <string name="gfsub9_1">Check for people</string>
+    <string name="gfsub9_2">Blinds down?</string>
+    <string name="gfsub9_3">Windows closed?</string>
+    <string name="gfsub9_4">Lights off, door closed</string>
+
+    <string name="gf_subtitle10">BACK STAIRS</string>
+    <string name="gfsub10_1">Back door locked?</string>
+    <string name="gfsub10_2">Blinds down?</string>
+    <string name="gfsub10_3">Walkway clear of obstructions?</string>
+    <string name="gfsub10_4">Data Centre door locked?</string>
+    <string name="gfsub10_5">Back stairs door closed?</string>
+    <string name="gfsub10_6">Lights off</string>
+
+    <string name="bf_title">BEFORE LEAVING</string>
+
+    <string name="bf_1">Visitor passes accounted for?</string>
+    <string name="bf_2">Visitor passes deactivated?</string>
+    <string name="bf_3">Missing passes logged?</string>
+    <string name="bf_4">Out of hours car parking logged?</string>
+    <string name="bf_5">Reception laptops closed down?</string>
+    <string name="bf_6">Reception TV off?</string>
+    <string name="bf_7">Slideshow updated for tomorrow?</string>
+    <string name="bf_8">Alarm set?</string>
+    <string name="bf_9">Front stairwell lights out</string>
+    <string name="bf_10">Front door locked</string>
+
+</resources>
