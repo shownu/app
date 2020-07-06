@@ -1,0 +1,2989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/sf_title"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="@dimen/title_to_sub"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sf_subtitle1"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/title_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub1_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sf_title"/>
+
+        <CheckBox
+            android:id="@+id/sfsub1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub1_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub1_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub1_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub1_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub1_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub1_3"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub1_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle2"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub2_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub1_3"/>
+
+        <CheckBox
+            android:id="@+id/sfsub2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub2_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub2_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub2_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub2_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub2_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub2_3"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub2_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle3"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub2_3"/>
+
+        <CheckBox
+            android:id="@+id/sfsub3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub3_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub3_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub3_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub3_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub3_3"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub3_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle4"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle4"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub4_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub3_3"/>
+
+        <CheckBox
+            android:id="@+id/sfsub4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub4_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub4_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub4_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub4_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub4_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub4_3"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub4_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle5"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle5"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub5_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub4_3"/>
+
+        <CheckBox
+            android:id="@+id/sfsub5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub5_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub5_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub5_2"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub5_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle6"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub6_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub5_2"/>
+
+        <CheckBox
+            android:id="@+id/sfsub6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub6_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub6_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub6_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub6_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub6_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub6_3"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub6_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub6_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub6_4"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub6_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub6_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub6_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub6_5"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub6_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle7"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle7"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub7_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub6_5"/>
+
+        <CheckBox
+            android:id="@+id/sfsub7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub7_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub7_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/sfsub7_2"
+            app:layout_constraintBottom_toTopOf="@+id/sf_subtitle8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub7_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sf_subtitle8"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/sf_subtitle8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub8_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub7_2"/>
+
+        <CheckBox
+            android:id="@+id/sfsub8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub8_1"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub8_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sf_subtitle8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub8_2"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub8_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub8_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/sfsub8_3"
+            app:layout_constraintBottom_toTopOf="@+id/sfsub8_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub8_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/sfsub8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_comments"
+            android:text="@string/sfsub8_4"
+            app:layout_constraintBottom_toTopOf="@+id/comments_sf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sfsub8_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/comments_sf"
+            android:layout_width="@dimen/comment_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/cb_to_comments"
+            android:layout_marginBottom="@dimen/comments_to_title"
+            android:autofillHints="@string/comment"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@id/ff_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sfsub8_4" />
+
+        <TextView
+            android:id="@+id/ff_title"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/comments_to_title"
+            android:layout_marginBottom="@dimen/title_to_sub"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comments_sf"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle1"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/title_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub1_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ff_title"/>
+
+        <CheckBox
+            android:id="@+id/ffsub1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub1_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub1_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub1_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub1_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub1_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub1_3"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub1_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle2"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub2_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub1_3"/>
+
+        <CheckBox
+            android:id="@+id/ffsub2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub2_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub2_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub2_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub2_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub2_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub2_3"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub2_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle3"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub2_3"/>
+
+        <CheckBox
+            android:id="@+id/ffsub3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub3_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub3_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub3_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub3_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub3_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub3_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub3_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub3_4"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub3_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub3_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub3_5"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub3_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle4"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle4"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub4_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub3_5"/>
+
+        <CheckBox
+            android:id="@+id/ffsub4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub4_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub4_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub4_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub4_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub4_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub4_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub4_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub4_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub4_4"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub4_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle5"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle5"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub5_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub4_4"/>
+
+        <CheckBox
+            android:id="@+id/ffsub5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub5_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub5_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub5_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub5_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub5_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub5_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub5_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub5_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub5_4"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub5_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle6"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub6_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub5_4"/>
+
+        <CheckBox
+            android:id="@+id/ffsub6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub6_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub6_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub6_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub6_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub6_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub6_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub6_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub6_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub6_4"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub6_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub6_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub6_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub6_5"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub6_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle7"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle7"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub7_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub6_5"/>
+
+        <CheckBox
+            android:id="@+id/ffsub7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub7_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub7_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub7_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub7_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub7_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub7_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub7_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub7_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub7_4"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub7_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub7_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub7_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/ffsub7_5"
+            app:layout_constraintBottom_toTopOf="@+id/ff_subtitle8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub7_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ff_subtitle8"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/ff_subtitle8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub7_5"/>
+
+        <CheckBox
+            android:id="@+id/ffsub8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub8_1"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ff_subtitle8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub8_2"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub8_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub8_3"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub8_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub8_4"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub8_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub8_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/ffsub8_5"
+            app:layout_constraintBottom_toTopOf="@+id/ffsub8_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub8_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/ffsub8_6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_comments"
+            android:text="@string/ffsub8_6"
+            app:layout_constraintBottom_toTopOf="@+id/comments_ff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ffsub8_5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/comments_ff"
+            android:layout_width="@dimen/comment_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cb_to_comments"
+            android:layout_marginBottom="@dimen/comments_to_title"
+            android:autofillHints="@string/comment"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@id/ff_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ffsub8_6" />
+
+        <TextView
+            android:id="@+id/gf_title"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/comments_to_title"
+            android:layout_marginBottom="@dimen/title_to_sub"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comments_ff"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/gf_subtitle1"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/title_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub1_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_title"/>
+
+        <CheckBox
+            android:id="@+id/gfsub1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub1_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub1_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle1" />
+
+        <CheckBox
+            android:id="@+id/gfsub1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub1_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub1_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub1_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub1_3"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub1_2" />
+
+        <TextView
+            android:id="@+id/gf_subtitle2"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub2_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub1_3"/>
+
+        <CheckBox
+            android:id="@+id/gfsub2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub2_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub2_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle2" />
+
+        <CheckBox
+            android:id="@+id/gfsub2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub2_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub2_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub2_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub2_3"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub2_2" />
+
+        <TextView
+            android:id="@+id/gf_subtitle3"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub2_3"/>
+
+        <CheckBox
+            android:id="@+id/gfsub3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub3_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle3" />
+
+        <CheckBox
+            android:id="@+id/gfsub3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub3_2"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub3_1" />
+
+        <TextView
+            android:id="@+id/gf_subtitle4"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle4"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub4_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub3_2"/>
+
+        <CheckBox
+            android:id="@+id/gfsub4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub4_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub4_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle4" />
+
+        <CheckBox
+            android:id="@+id/gfsub4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub4_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub4_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub4_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub4_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub4_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub4_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub4_4"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub4_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub4_3" />
+
+        <CheckBox
+            android:id="@+id/gfsub4_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub4_5"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub4_4" />
+
+        <TextView
+            android:id="@+id/gf_subtitle5"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle5"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub5_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub4_5"/>
+
+        <CheckBox
+            android:id="@+id/gfsub5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub5_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub5_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle5" />
+
+        <CheckBox
+            android:id="@+id/gfsub5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub5_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub5_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub5_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub5_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub5_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub5_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub5_4"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub5_3" />
+
+        <TextView
+            android:id="@+id/gf_subtitle6"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub6_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub5_4"/>
+
+        <CheckBox
+            android:id="@+id/gfsub6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub6_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub6_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle6" />
+
+        <CheckBox
+            android:id="@+id/gfsub6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub6_2"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub6_1" />
+
+        <TextView
+            android:id="@+id/gf_subtitle7"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle7"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub7_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub6_2"/>
+
+        <CheckBox
+            android:id="@+id/gfsub7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub7_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub7_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle7" />
+
+        <CheckBox
+            android:id="@+id/gfsub7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub7_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub7_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub7_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub7_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub7_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub7_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub7_4"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub7_3" />
+
+        <TextView
+            android:id="@+id/gf_subtitle8"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub8_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub7_4"/>
+
+        <CheckBox
+            android:id="@+id/gfsub8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub8_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub8_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle8" />
+
+        <CheckBox
+            android:id="@+id/gfsub8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub8_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub8_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub8_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub8_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub8_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub8_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub8_4"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub8_3" />
+
+        <TextView
+            android:id="@+id/gf_subtitle9"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle9"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub9_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub8_4"/>
+
+        <CheckBox
+            android:id="@+id/gfsub9_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub9_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub9_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle9" />
+
+        <CheckBox
+            android:id="@+id/gfsub9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub9_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub9_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub9_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub9_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub9_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub9_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_sub"
+            android:text="@string/gfsub9_4"
+            app:layout_constraintBottom_toTopOf="@+id/gf_subtitle10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub9_3" />
+
+        <TextView
+            android:id="@+id/gf_subtitle10"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_sub"
+            android:layout_marginBottom="@dimen/sub_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/gf_subtitle10"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub9_4"/>
+
+        <CheckBox
+            android:id="@+id/gfsub10_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/sub_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub10_1"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gf_subtitle10" />
+
+        <CheckBox
+            android:id="@+id/gfsub10_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub10_2"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub10_1" />
+
+        <CheckBox
+            android:id="@+id/gfsub10_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub10_3"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub10_2" />
+
+        <CheckBox
+            android:id="@+id/gfsub10_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub10_4"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub10_3" />
+
+        <CheckBox
+            android:id="@+id/gfsub10_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/gfsub10_5"
+            app:layout_constraintBottom_toTopOf="@+id/gfsub10_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub10_4" />
+
+        <CheckBox
+            android:id="@+id/gfsub10_6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_comments"
+            android:text="@string/gfsub10_6"
+            app:layout_constraintBottom_toTopOf="@+id/comments_gf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gfsub10_5" />
+
+        <EditText
+            android:id="@+id/comments_gf"
+            android:layout_width="@dimen/comment_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/cb_to_comments"
+            android:layout_marginBottom="@dimen/comments_to_title"
+            android:autofillHints="@string/comment"
+            android:ems="8"
+            android:gravity="start|top"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@id/bf_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gfsub10_6" />
+
+        <TextView
+            android:id="@+id/bf_title"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/comments_to_title"
+            android:layout_marginBottom="@dimen/title_to_cb"
+            android:gravity="start|center_vertical"
+            android:text="@string/bf_title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/bf_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comments_gf"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <CheckBox
+            android:id="@+id/bf_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/title_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_1"
+            app:layout_constraintBottom_toTopOf="@+id/bf_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_2"
+            app:layout_constraintBottom_toTopOf="@+id/bf_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_3"
+            app:layout_constraintBottom_toTopOf="@+id/bf_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_4"
+            app:layout_constraintBottom_toTopOf="@+id/bf_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_5"
+            app:layout_constraintBottom_toTopOf="@+id/bf_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_6"
+            app:layout_constraintBottom_toTopOf="@+id/bf_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_7"
+            app:layout_constraintBottom_toTopOf="@+id/bf_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_8"
+            app:layout_constraintBottom_toTopOf="@+id/bf_9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_9"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_cb"
+            android:text="@string/bf_9"
+            app:layout_constraintBottom_toTopOf="@+id/bf_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/bf_10"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/cb_to_cb"
+            android:layout_marginBottom="@dimen/cb_to_comments"
+            android:text="@string/bf_10"
+            app:layout_constraintBottom_toTopOf="@+id/comments_bf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bf_9"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/comments_bf"
+            android:layout_width="@dimen/comment_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/cb_to_comments"
+            android:layout_marginBottom="@dimen/comments_to_end"
+            android:autofillHints="@string/comment"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bf_10" />
+
+        <TextView
+            android:id="@+id/sfsub1_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub1_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub1_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub1_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub1_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub1_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub2_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub2_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub2_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub2_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub2_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub2_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub3_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub3_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub3_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub3_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub3_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub3_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub4_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub4_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub4_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub4_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub4_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub4_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub5_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub5_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub5_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub5_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub6_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub6_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub6_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub6_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub6_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub6_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub6_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub6_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub6_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub6_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub7_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub7_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub7_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub7_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub8_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub8_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub8_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub8_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub8_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub8_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/sfsub8_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/sfsub8_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub1_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub1_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub1_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub1_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub1_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub1_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub2_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub2_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub2_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub2_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub2_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub2_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub3_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub3_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub3_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub3_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub3_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub3_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub3_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub3_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub3_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub3_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub4_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub4_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub4_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub4_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub4_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub4_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub4_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub4_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub5_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub5_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub5_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub5_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub5_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub5_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub5_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub5_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub6_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub6_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub6_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub6_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub6_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub6_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub6_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub6_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub6_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub6_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub7_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub7_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub7_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub7_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub7_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub7_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub7_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub7_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub7_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub7_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ffsub8_6_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/ffsub8_6"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub1_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub1_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub1_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub1_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub1_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub1_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub2_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub2_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub2_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub2_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub2_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub2_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub3_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub3_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub3_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub3_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub4_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub4_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub4_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub4_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub4_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub4_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub4_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub4_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub4_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub4_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub5_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub5_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub5_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub5_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub5_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub5_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub5_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub5_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub6_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub6_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub6_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub6_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub7_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub7_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub7_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub7_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub7_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub7_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub7_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub7_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub8_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub8_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub8_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub8_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub8_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub8_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub8_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub8_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub9_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub9_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub9_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub9_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub9_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub9_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub9_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub9_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gfsub10_6_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/gfsub10_6"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_1_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_2_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_3_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_4_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_5_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_6_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_6"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_7_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_7"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_8_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_8"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_9_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_9"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/bf_10_ts"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/ts"
+            app:layout_constraintBottom_toBottomOf="@+id/bf_10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <EditText
+            android:id="@+id/emailBox"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cb_to_comments"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="@string/emails"
+            android:textSize="16sp"
+            android:hint="@string/emailHint"
+            android:inputType="textEmailAddress"
+            android:text="@string/emails"
+            app:layout_constraintBottom_toTopOf="@id/check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comments_bf" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="146dp"
+            android:layout_height="@dimen/cb_height"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/checker_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailBox" />
+
+        <EditText
+            android:id="@+id/checked_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="@string/checker"
+            android:textSize="16sp"
+            android:hint="@string/checkerHint"
+            android:inputType="text"
+            android:text="@string/checker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailBox" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
